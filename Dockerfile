@@ -8,7 +8,7 @@ RUN apk update && \
 	tar -zxvf kibana-4.5.0-linux-x64.tar.gz && \
 	rm kibana-4.5.0-linux-x64.tar.gz && \
 	mv kibana-4.5.0-linux-x64 /kibana && \
-	rm /kibana/node
+	rm -rf /kibana/node
 
 ADD configurations /kibana/config
 
